@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-7-4 0:35:55 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.sophia.eorder.domain.Orderedfood" table="orderedfood" catalog="eorder">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="orderid" type="string">
+            <column name="orderid" length="15" not-null="true" />
+        </property>
+        <property name="menuid" type="java.lang.Short">
+            <column name="menuid" />
+        </property>
+        <property name="foodCount" type="java.lang.Short">
+            <column name="foodCount" />
+        </property>
+        <property name="foodType" type="string">
+            <column name="foodType" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

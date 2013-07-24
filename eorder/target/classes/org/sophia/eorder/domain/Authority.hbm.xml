@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2013-7-4 0:35:55 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="org.sophia.eorder.domain.Authority" table="authority" catalog="eorder">
+        <id name="authoid" type="string">
+            <column name="authoid" length="5" />
+            <generator class="assigned" />
+        </id>
+        <property name="authoType" type="string">
+            <column name="authoType" length="2" not-null="true" />
+        </property>
+        <property name="authoUrl" type="string">
+            <column name="authoUrl" length="25" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
